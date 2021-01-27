@@ -1,7 +1,14 @@
-from django.http import HttpResponse
+from django.http import HttpResponse,render
 
 def home(request):#primera vista
     return HttpResponse("Pagina principal")
 
-def entradas(request):#primera vista
-    return HttpResponse("aqui iran unas entradas a mis proyectos")
+def perfil_personal(request):#primera vista
+    return HttpResponse("Servicios")
+    
+def blog(request):#primera vista
+    return HttpResponse("blog")
+
+def contacto(request):#primera vista
+    return HttpResponse("contacto")
+
